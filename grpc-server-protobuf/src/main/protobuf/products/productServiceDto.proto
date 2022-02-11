@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package org.hejwo.ecommerce;
+
+message Product {
+  string id = 1;
+  string name = 2;
+  string description = 3;
+}
+
+message ProductID {
+  string value = 1;
+}
+
+message ProductsSubscriber {
+  string appId = 1;
+  int32 howMuch = 2;
+}
+
+message BatchResponse {
+  repeated ProductID productIds = 1;
+}

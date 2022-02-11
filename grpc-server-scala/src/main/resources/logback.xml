@@ -1,0 +1,22 @@
+<configuration scan="true">
+    <jmxConfigurator/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date [%-5level] %logger{36} [%thread] - %msg%n%xException</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.hejwo.ecommerce" level="${LOG_LEVEL:-INFO}"/>
+    <!--  Don't dispaly errors about closing WS-->
+    <!--  s://github.com/http4s/http4s/issues/2729#issuecomment-512964267-->
+    <!--    <logger name="org.http4s.blazecore.websocket.Http4sWSStage" level="WARN"/>-->
+    <logger name="org.http4s.blaze.channel.nio1.NIO1SocketServerGroup" level="WARN"/>
+    <logger name="sttp.tapir.server" level="INFO"/>
+
+    <logger name="com.zaxxer.hikari.HikariConfig" level="INFO"/>
+    <logger name="com.zaxxer.hikari" level="INFO"/>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

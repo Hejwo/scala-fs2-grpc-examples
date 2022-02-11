@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package org.hejwo.ecommerce;
+
+import "products/productServiceDto.proto";
+
+service ProductService {
+
+  rpc addProduct(Product) returns (ProductID);
+  rpc getProduct(ProductID) returns (Product);
+
+  rpc subscribeToProducts(ProductsSubscriber) returns (stream Product);
+
+  rpc addProductsBatch(stream Product) returns (BatchResponse);
+  rpc addProductsStream(stream Product) returns (stream ProductID);
+}
+

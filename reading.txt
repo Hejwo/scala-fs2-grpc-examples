@@ -1,0 +1,22 @@
+/** Combined
+  * TODO - https://github.com/typelevel/fs2-grpc
+  * TODO - czytaj to: https://index.scala-lang.org/typelevel/fs2-grpc/sbt-fs2-grpc#
+  * TODO - https://index.scala-lang.org/typelevel/fs2-grpc/sbt-fs2-grpc
+  */
+
+/** GRPC
+  * TODO - https://github.com/protocolbuffers/protobuf/tree/master/src/google/protobuf
+  * TODO - https://developers.google.com/protocol-buffers/docs/javatutorial
+  * TODO - https://developers.google.com/protocol-buffers/docs/proto3
+  */
+
+/** FS2
+  *   TODO - dobre intro: http://www.beyondthelines.net/programming/streaming-patterns-with-fs2/
+  *   https://devon-miller.gitbook.io/test_private_book/intro_examples/more_than_one_stream
+  *   TODO - przyklady: https://github.com/fiadliel/fs2-grpc-example/blob/master/server/src/main/scala/Main.scala
+  */
+
+/** Other goodies
+  * https://cloud.redhat.com/blog/grpc-anywhere
+  * https://cloud.google.com/blog/products/serverless/cloud-run-gets-websockets-http-2-and-grpc-bidirectional-streams
+  */
